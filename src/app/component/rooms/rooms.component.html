@@ -1,0 +1,29 @@
+<section>
+    <div class="header">
+        <div class="heading-text">
+            <h1>Rooms</h1>
+            <p>Come see our wonderful rooms</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="room-card">
+        <div class="room" *ngFor="let room of rooms">
+            <a href="">
+                <img [src]="room.img" alt="">
+            </a>
+            <div class="text">
+                <h3><a href="rooms-single.html">Suite Room</a></h3>
+                    <p><span class="price">{{ room.price }}</span> <span class="per">per night</span></p>
+                <ul class="list">
+                    <li><span>Max:</span> {{ room.persons }}</li>
+                    <li><span>View:</span> {{ room.view }}</li>
+                    <li><span>Bed:</span> {{ room.beds }}</li>
+                </ul>
+                <hr>
+                <p class="pt-1"><a href="room-single.html" class="btn-custom">Book Now <span class="fa-solid fa-right-long"></span></a></p>
+            </div>
+        </div>
+    </div>
+</section>

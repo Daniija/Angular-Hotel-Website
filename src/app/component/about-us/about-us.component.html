@@ -1,0 +1,97 @@
+<section>
+    <div class="header">
+        <div class="heading-text">
+            <h1>About Us</h1>
+            <p>Learn what we do here at Corinthia Hotels</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="intro-section">
+        <div class="left">
+            <video controls>
+                <source src="assets/pexels-peggy-anke-6242776.mp4">
+            </video>
+        </div>
+            <div class="right">
+                <div class="info">
+                    <h3>Welcome to the Coninthia Hotel</h3>
+                    <h2>Welcome to our Hotel</h2>
+                </div>
+                <p>
+                    On her way she met a copy. The copy warned the Little Blind Text, that <br>
+                    where it came from it would have been rewritten a thousand times and <br> 
+                    everything that was left from its origin would be the word "and" and <br>
+                    the Little Blind Text should turn around and return to its own, safe country. But<br> 
+                    nothing the copy said could convince her and so it didn’t take long until a <br>
+                    few insidious Copy Writers ambushed her, made her drunk with Longe and Parole <br>
+                    and dragged her into their agency, where they abused her for their.<br> <br>
+    
+                    When she reached the first hills of the Italic Mountains, she had a last view<br> 
+                    back on the skyline of her hometown Bookmarksgrove, the headline of <br>
+                    Alphabet Village and the subline of her own road, the Line Lane. Pityful a <br>
+                    rethoric question ran over her cheek, then she continued her way.<br>
+                </p>
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-twitter mr-4"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f mr-4"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram mr-4"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g mr-4"></i></a>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section>
+    <div class="heading">
+        <h1>Services Offered</h1>
+    </div>
+    <div class="services">
+        <div *ngFor="let service of services">
+            <div class="box">
+                <div class="box-img">
+                    <img [src]="service.img">
+                </div>
+                <div class="title">
+                    <h3>{{ service.title }}</h3>
+                </div>
+                <div class="description">
+                    <p>{{ service.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="heading">
+        <h2>Meet Our Team</h2>
+    </div>
+    <div class="container flex">
+        <div *ngFor="let team of teams">
+            <div class="">
+                <div class="team-member">
+                <div class="team-img">
+                    <img [src]="team.img" alt="">
+                    <div class="overlay">
+                        <div class="team-details text-center">
+                            <p>
+                            {{ team.description }}
+                            </p>
+                            <div class="socials mt-20">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="team-title">{{ team.name }}</h6>
+                <span>{{ team.title }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

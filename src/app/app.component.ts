@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hotel-website';
-}
+  constructor() { }  
+  
+  ngOnInit() {  
+    this.loadJsFile("/script.js");  
+  }  
+  public loadJsFile(url: string) {  
+    let node = document.createElement('script');  
+    node.src = url;  
+    node.type = 'text/javascript';  
+    document.getElementsByTagName('head')[0].appendChild(node);  
+  }  
+}  
+

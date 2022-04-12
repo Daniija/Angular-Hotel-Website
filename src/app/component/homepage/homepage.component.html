@@ -1,0 +1,277 @@
+<section class="home">
+    <div class="container">
+        <h1>Make Memories</h1>
+        <p>Discover the place where you have fun & enjoy a lot</p>
+            <div class="content grid">
+                <div class="box">
+                    <span>ARRIVAL DATE </span> <br>
+                    <input type="date" placeholder="29/20/2021">
+                </div>
+                <div class="box">
+                    <span>DEPARTURE DATE </span> <br>
+                    <input type="date" placeholder="29/20/2021">
+                </div>
+                <div class="box">
+                    <span>ADULTS</span> <br>
+                    <input type="number" placeholder="01">
+                </div>
+                <div class="box">
+                    <span>CHILDREN </span> <br>
+                    <input type="number" placeholder="01">
+                </div>
+                <div class="box">
+                    <button class="flex1">
+                        <span>Check Availability</span>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="about">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPLORE</h5>
+        <h2>We are cool to give you pleasure
+        </h2>
+      </div>
+
+      <div class="content flex top">
+        <div class="left">
+          <h3>As much as comfort want to get from us everything
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="right">
+          <img src="/assets/a.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="">
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper2">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>FACILITIES</h5>
+        <h2>Giving entirely awesome </h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+          <span class="fa-solid fa-right-long"></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-mug-hot"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+          <span class="fa-solid fa-right-long"></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+          <span class="fa-solid fa-right-long"></span>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-water"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+          <span class="fa-solid fa-right-long"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="room wrapper2 top" id="room">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR ROOMS</h5>
+        <h2>Fascinating rooms & suites </h2>
+      </div>
+      <div class="content flex mtop">
+        <div class="left grid2">
+          <div class="box">
+            <i class="fas fa-desktop"></i>
+            <p>Free Cost</p>
+            <h3>No booking fee</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-dollar-sign"></i>
+            <p>Free Cost</p>
+            <h3>Best rate guarantee</h3>
+          </div>
+          <div class="box">
+            <i class="fab fa-resolving"></i>
+            <p>Free Cost</p>
+            <h3>Reservations 24/7</h3>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-wifi"></i>
+            <p>Free Cost</p>
+            <h3>High-speed Wi-Fi</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-mug-hot"></i>
+            <p>Free Cost</p>
+            <h3>Free breakfast</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-user-tie"></i>
+            <p>Free Cost</p>
+            <h3>One person free</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img src="/assets/r.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+      <div class="heading">
+        <h5>LAST MINUTE!</h5>
+        <h2> <span>Incredible!</span> Are you coming today</h2>
+      </div>
+
+      <div id="time" class="flex1 mtop"> </div>
+    </div>
+  </section>
+
+  <section class="offer mtop">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex" *ngFor="let exclusive of exclusives">
+          <div class="left">
+            <img [src]="exclusive.img" alt="">
+          </div>
+          <div class="right">
+            <h4>{{ exclusive.title }}</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>{{ exclusive.description }}</p>
+            <h5>{{ exclusive.price }}/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area top">
+    <div class="container">
+      <div class="heading">
+        <h5>RESTAURANT</h5>
+        <h3>The area we cover under ecorik</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="/assets/aera.jpg" alt="">
+        </div>
+        <div class="right">
+          <ul>
+            <li>Restaurant </li>
+            <li>Swimming pool </li>
+            <li>Conference room</li>
+          </ul>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer2 about wrapper timer top">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box" *ngFor="let activity of activities">
+          <h5>UP TO 30% OFF</h5>
+          <h3>{{ activity.title }}</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>{{ activity.description }}</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> {{ activity.duration }} </i>
+            <i class="far fa-dot-circle"> {{ activity.age }} </i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="blog top">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR BLOG</h5>
+        <h3>News & articles updates</h3>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box" *ngFor="let blog of blogs">
+          <div class="img">
+            <img [src]="blog.img" alt="">
+            <span>{{ blog.banner }}</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>{{ blog.person }}</label> </i>
+              <i class="far fa-comments"> <label>{{ blog.comments }}</label> </i>
+            </div>
+            <h3>{{ blog.title }}</h3>
+            <p> {{ blog.description }}</p>
+            <a href="#">Read More <i class="fa-solid fa-arrow-right-long"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
